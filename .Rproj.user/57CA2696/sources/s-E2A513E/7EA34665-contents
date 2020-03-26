@@ -17,7 +17,7 @@ merged_data <- rbind(train, test)
 
 
 #Getting measurements on the mean and std
-tidy_data <- merged_Data %>% select(subject, code, contains("mean"), contains("std"))
+tidy_data <- merged_data %>% select(subject, code, contains("mean"), contains("std"))
 
 
 # Change "code" column to the names from activites
